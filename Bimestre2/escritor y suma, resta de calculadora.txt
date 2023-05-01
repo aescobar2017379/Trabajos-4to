@@ -1,0 +1,263 @@
+PROGRAMACLASE2_2017379
+package org.angelescobar.system;
+
+import org.angelescobar.writers.Escritor;
+import org.angelescobar.writers.EscritorNuevo;
+import org.angelescobar.writers.EscritorPolimÃ³rfico;
+
+/**
+ *
+ * @author angel
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Escritor  es = new Escritor ();
+        EscritorNuevo es2 = new EscritorNuevo();
+        EscritorPolimÃ³rfico es3 = new EscritorPolimÃ³rfico();
+        
+        es.escribir("El primer escritor");
+        es2.escribir("El segundo escritor");
+        es2.escribeConAsteriscos("Lees esto con Asteriscos");
+        es3.escribir("El tercer Escritor");
+        
+    }
+    
+}
+
+
+ESCRITOR
+/*
+nombre: Angel Gabriel Escobar Arevalo
+ */
+package org.angelescobar.writers;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author informatica
+ */
+public class Escritor {
+    
+   public Escritor () {
+    
+        
+  }
+         public static void escribir (String texto) {
+            JOptionPane.showMessageDialog(null, texto);
+    }
+}
+
+
+ESCRITORNUEVO
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package org.angelescobar.writers;
+
+
+public class EscritorNuevo extends Escritor{
+    public EscritorNuevo () {
+        
+    }
+    
+    public static void escribeConAsteriscos(String texto){
+        escribir ("**"+ texto + "**");
+    }
+
+}
+
+
+ESCRITOR POLIMORFICO
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package org.angelescobar.writers;
+
+public class EscritorPolimórfico extends Escritor{
+    
+    public EscritorPolimórfico (){
+        
+    }
+    public static void escribir (String texto){
+        Escritor.escribir (texto.toUpperCase ());
+    }
+}
+
+
+CALCULADORA
+
+/*
+nombre: Angel Gabriel Escobar Arevalo
+codigo Técnico; IN5CV
+carné: 2017379
+fecha de creación: 24/03/2022
+fecha de modificación:  
+ */
+package org.angelescobar.system;
+
+import javax.swing.JOptionPane;
+import org.angelescobar.bean.Resta;
+import org.angelescobar.bean.Suma;
+
+/**
+ *
+ * @author angel
+ */
+public class Principal {
+
+        
+    public static void main(String[] args) {
+//        int valor1, valor2, result;
+        
+//        valor1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el primer número"));
+//        valor2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el segundo número"));
+//        JOptionPane.showMessageDialog(null, "EL resultado es: "+ String.valueOf(valor1+valor2));
+          JOptionPane.showMessageDialog(null, "Programador Angel Escobar");
+          Suma suma = new Suma(0,0);
+          suma.setNum1(Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un valor")));
+          suma.setNum2(Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el segundo valor")));
+          JOptionPane.showMessageDialog(null, "La suma es:"+ String.valueOf(suma.sumatoria(suma.getNum1() ,suma.getNum2())));
+    }
+    
+          Resta resta = new Resta (0,0);
+          resta.setNum1(Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un valor")));
+          resta.setNum2(Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el segundo valor")));
+          JOptionPane.showMessageDialog(null, "La sustracción es: "+ String.valueOf(resta.sustracción(resta.getNum1() ,sustracción.getNum2())));
+
+
+
+SUMA
+
+
+package org.angelescobar.bean;
+
+
+public class Suma {
+    // atributos
+    private double num1; 
+    private double num2;
+    
+    // constructor nulo
+    public Suma (){
+        
+    }
+    // constructor con argumentos
+    public Suma(double num1, double num2){
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+    
+    //Metodos de acceso 
+
+    public double getNum1() {
+        return num1;
+    }
+
+    public void setNum1(double num1) {
+        this.num1 = num1;
+    }
+
+    public double getNum2() {
+        return num2;
+    }
+
+    public void setNum2(double num2) {
+        this.num2 = num2;
+    }
+    
+    public double sumatoria(double num1, double num2){
+        double result = num1 + num2;
+        return result;
+    }
+}
+
+RESTA
+
+package org.angelescobar.bean;
+
+public class Resta {
+    private double num1;
+    private double num2;
+    
+    public Resta(){
+        
+    }
+    
+    public Resta(double num1, double num2){
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    public double getNum1() {
+        return num1;
+    }
+
+    public void setNum1(double num1) {
+        this.num1 = num1;
+    }
+
+    public double getNum2() {
+        return num2;
+    }
+
+    public void setNum2(double num2) {
+        this.num2 = num2;
+    }
+        
+    public double sustracción(double num1, double num2){
+        double result = num1 - num2;
+        return result;
+    }
+    
+}
+
+
+MULTIPL
+
+package org.angelescobar.bean;
+
+public class Resta {
+    private double num1;
+    private double num2;
+    
+    public Resta(){
+        
+    }
+    
+    public Resta(double num1, double num2){
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    public double getNum1() {
+        return num1;
+    }
+
+    public void setNum1(double num1) {
+        this.num1 = num1;
+    }
+
+    public double getNum2() {
+        return num2;
+    }
+
+    public void setNum2(double num2) {
+        this.num2 = num2;
+    }
+        
+    public double sustracción(double num1, double num2){
+        double result = num1 - num2;
+        return result;
+    }
+    
+}

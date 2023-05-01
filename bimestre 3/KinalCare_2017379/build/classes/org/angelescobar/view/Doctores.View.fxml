@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #a3d5d2;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="219.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Doctores.png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutX="25.0" layoutY="128.0" opacity="0.66" prefHeight="258.0" prefWidth="150.0">
+                     <children>
+                        <Button fx:id="btnNuevo" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" styleClass="button1" stylesheets="@../resource/kinalCareCSS.css" text="Nuevo">
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="imgNuevo" fitHeight="30.0" fitWidth="30.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Nuevo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="48.0" prefWidth="170.0" styleClass="button1" stylesheets="@../resource/kinalCareCSS.css" text="Eliminar">
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="imgEliminar" fitHeight="115.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/delete.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnEditar" mnemonicParsing="false" prefHeight="58.0" prefWidth="153.0" styleClass="button1" stylesheets="@../resource/kinalCareCSS.css" text="Editar">
+                           <graphic>
+                              <ImageView fx:id="imgEditar" fitHeight="109.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/editar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnReporte" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="button1" stylesheets="@../resource/kinalCareCSS.css" text="Reporte">
+                           <graphic>
+                              <ImageView fx:id="imgReporte" fitHeight="39.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/About.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/flecha.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <Text layoutX="29.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctores">
+                     <font>
+                        <Font name="DeVinne Txt BT" size="39.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="200.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #447c7c;">
+         <children>
+            <Text layoutX="26.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numeroColegiado">
+               <font>
+                  <Font name="DeVinne Txt BT" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="26.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nombresDoctor">
+               <font>
+                  <Font name="DeVinne Txt BT" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="26.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="apellidosDoctor">
+               <font>
+                  <Font name="DeVinne Txt BT" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="26.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="telefonoContacto">
+               <font>
+                  <Font name="DeVinne Txt BT" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="26.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="codigoEspecialidad">
+               <font>
+                  <Font name="DeVinne Txt BT" size="22.0" />
+               </font>
+            </Text>
+            <TextField layoutX="26.0" layoutY="53.0" />
+            <TextField layoutX="26.0" layoutY="118.0" />
+            <TextField layoutX="26.0" layoutY="191.0" />
+            <TextField layoutX="26.0" layoutY="269.0" />
+            <TextField layoutX="26.0" layoutY="349.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>

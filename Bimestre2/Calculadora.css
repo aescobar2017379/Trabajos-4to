@@ -1,0 +1,39 @@
+.menu-item {
+	-fx-padding: 0.0em 0.0em 0.0em 0.03m;
+	-fx-text-fill: Black;
+	-fx-background: darkgray;
+}
+.menu-item .label{
+	-fx-font-size: 14.0 pt;
+	-fill-text-fill: black;
+}
+.menu-item .label:hover{
+	-fx-font-size: 14.0 pt;
+	-fx-background: black;
+	-fill-text-fill: white;
+}
+.conetext-menu {
+	-fx-skin: "com.sun.javfx.scene.control.skin.ContextMenuskin";
+	-fx-background-color: white;
+	-fx-border-width: 0.2px;
+	-fx-border-color: black;
+	/** -fx-background-insets: 0.0, 1.0, 2.0;
+	-fx-background-radius: 0.0 6.0 6.06, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+	-fx-padding: 0.333333em, 0.083333em 0.666667em 0.08333em;
+	-fx-opacity: 0.9*/
+}
+
+.button1 {
+	-fx-background-color:  #f7e4fa;
+	-fx-background-radius: 10 0 10 0;
+}
+
+.button1:hover{
+	-fx-background-color:    #7356bf;
+	-fx-background-radius: 10 0 10 0;
+}
+
+.button1:pressed{
+	-fx-background-color:  #441942;
+	-fx-background-radius: 10 0 10 0;
+}

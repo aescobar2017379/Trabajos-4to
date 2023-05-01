@@ -1,0 +1,73 @@
+/*
+Nombre: Angel Gabriel Escobar Arevalo
+Codigo Tecnico: IN5CV
+Carnet: 2017379
+Fecha de creacion: 19/04/2022
+Fecha de modificacion:
+ */
+package org.angelescobar.system;
+
+import java.util.ArrayList;
+
+
+public class Principal {
+
+    
+    public static void main(String[] args) {
+       ArrayList<String> nombres = new ArrayList<String>();
+       
+       for (int i=0; i<=10; i++){
+           nombres.add("Angel "+i);
+       }
+       
+       for (int i=1; i<=10; i++){
+           System.out.println(nombres.get(i));
+       }
+       
+//       nombres.add("Angel");
+//       nombres.add("Gabriel Escobar");
+//        System.out.println("Tamaño de ArrayList");
+//        System.out.println(nombres.size());
+//        System.out.println("");
+//        System.out.println("se obtiene el elemento 1 del ArrayList");
+//        System.out.println(nombres.get(1));
+//        System.out.println("");
+//        System.out.println("Se verifica si el nombre esta dentro de ArrayList");
+//        System.out.println(nombres.contains("Angel"));
+//        System.out.println("");
+//        System.out.println("se obtiene el indice del elemento dentro del ArrayList");
+//        System.out.println(nombres.indexOf("Angel"));
+//        
+//        System.out.println("");
+//        
+//        System.out.println("se imprimen los datos del ArrayList");
+//       for (int i=0; i<nombres.size(); i++){
+//           System.out.println(nombres.get(i));
+//       }
+//       
+//       nombres.add("Pascual");
+//       
+//        System.out.println("Tamaño del ArrayList");
+//        System.out.println(nombres.size());
+//        System.out.println("");
+//        
+//        System.out.println("Se imprimen los datos del ArrayList");
+//        for (int i=0; i<nombres.size(); i++){
+//             System.out.println(nombres.get(i));
+//        }
+//        System.out.println("posición de ocurrencia último elemento");
+//        System.out.println(nombres.lastIndexOf("Angel"));
+//        
+//        System.out.println("Borra por elemento");
+//        nombres.remove("Angel");
+//        nombres.remove(2);
+//        
+//        System.out.println("se imprimen los datos del ArrayList");
+//       for (int i=0; i<nombres.size(); i++){
+//           System.out.println(nombres.get(i));
+//       }
+//           
+//   
+    }
+    
+}

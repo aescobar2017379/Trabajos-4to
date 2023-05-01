@@ -1,0 +1,9 @@
+instrucciones para evaluaciòn final 
+
+ver pdf sobre query sobre base de datos 
+- falta el procedimiento almacenado de agregar 
+-ejecutar query
+- abrir en java netbeans 
+- verificar conexiòn
+-realizar crud completo de categorìas
+- le falta el bean  

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.angelescobar.controller.ProgramadorController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="400.0" prefWidth="208.0" style="-fx-background-color: #447c7c;">
+         <children>
+            <ImageView fitHeight="436.0" fitWidth="190.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/programandor.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="207.0" prefHeight="400.0" prefWidth="394.0" style="-fx-background-color: #a3d5d2;">
+         <children>
+            <Text layoutX="108.0" layoutY="52.0" onMouseClicked="#menuPrincipal" strokeType="OUTSIDE" strokeWidth="0.0" text="Programador">
+               <font>
+                  <Font name="Book Antiqua" size="30.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grado">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sección">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código Técnico">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="197.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angel Gabriel">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="197.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escobar Arevalo">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="173.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5to Perito Informática">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="197.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="197.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IN5CV">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+El significado de las siglas en Java:
+
+	psvm +tab = public static void main  
+	
+	pop Programación Orientada a Objetos
+	
+	Objeto : 
+	Metodo (es todo aquello que puede hacer 
+			el objeto). Para lo que esta hecho.
+	Propiead (Caracteristicas del objeto).
+	
+	El atributo es la propiedad del objeto.
+	
+	Public yo pudo acceder desde cualquier clase
+	no importa donde sea. 
+	
+	static: porque los metodos esticos no necesitan
+	intanciarse, solo llamarlo.
+	
+	Void: es un procedimiento, no tienen valor de
+	retorno.
+	
+	main: Es el nombre
+	
+	Todos los metodos en java deben de llevar 
+	parametros todos, yo pued hacer un metodo sin
+	parametros pero debe de llevar parentesis.
+
+Sout + tab : es una clase que se llama sistem
+			tiene un metodo que se llama out y se
+			println este metodo recibe un parámetro.
+
+
+Una variable debe de tener 3 cosas fundamentales.
+
+1. Identicador = nombre que le va a dar
+
+2. Tipo de dato
+
+3. Valor = Lo puedo obtener de dos formas.
+	3.1 Asignandolo (con el simbolo de asignación que es el =)
+	3.2 Leyendolo: pidiendolo al usuario (por medio
+	de un objeto o una clase).
+
+Si no uso varible es porque la voy a utilizar. 
+
+Regla yo la puedo usar donde yo quiero, solo que
+hay que declararla.
+Tiene que llevar el tipo de dato y identificador.
+
+Casteo: Es convertir un tipo de dato a otro.
+
+Instancear: Crear un objeto.
+
+Si no uso paremetros, estoy usando un constructor nulo.
+
+Todas las clases de Java si no coloco un constructor, 
+automaticamente el le coloca uno, aunque yo no lo vea
+porque yo no lo escribi. 
+
+System.out salida del texto
+System.in entrada de algo 
+
+Si una clase es externa se debe de importar. 
+
+Es un metodo NextInt: Para datos enteros. 
+
+Tipos de metodos: NextInt, NextOut, NextByte, NextFloat
